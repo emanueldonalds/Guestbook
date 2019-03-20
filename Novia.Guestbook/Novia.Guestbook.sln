@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Domain", "Domain\Domain\Novia.Guestbook.Domain.csproj", "{CA137AAD-416F-4F87-ADEF-812A45ABB268}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Infrastructure", "Infrastructure\Infrastructure\Novia.Guestbook.Infrastructure.csproj", "{F39981AE-9ACF-4FA4-944C-F4D2609B5405}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Application.Abstractions", "Application\Application.Abstractions\Novia.Guestbook.Application.Abstractions.csproj", "{273B7BA4-FBE2-49A8-AEA9-53DF0C462426}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Application", "Application\Application\Novia.Guestbook.Application.csproj", "{9F18D1DD-3BF8-49AA-8C84-6D60E5EBAA47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A94B5F59-E6D5-4F02-BD62-8C9C03285814}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{27BE5F54-7B6A-48A8-812F-A42BD440DCD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{90168C4F-D199-4CBF-8745-EA85D9D51171}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CBD06067-A2A9-4DDA-8922-49B84A60C5DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Presentation.Console", "Presentation\Presentation.Console\Novia.Guestbook.Presentation.Console.csproj", "{B3861C31-7380-474F-A702-5348924FB418}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Presentation.Web", "Presentation\Presentation.Web\Novia.Guestbook.Presentation.Web.csproj", "{85F2E111-CCDA-4EFF-B9B8-C9A1EC9B25BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{B3E644BE-E378-42E4-B4DB-62518A770F7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novia.Guestbook.Configuration", "Configuration\Configuration\Novia.Guestbook.Configuration.csproj", "{E4C4D81E-A7F7-4FBD-B314-C49ABAB7F8D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA137AAD-416F-4F87-ADEF-812A45ABB268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA137AAD-416F-4F87-ADEF-812A45ABB268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA137AAD-416F-4F87-ADEF-812A45ABB268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA137AAD-416F-4F87-ADEF-812A45ABB268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39981AE-9ACF-4FA4-944C-F4D2609B5405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39981AE-9ACF-4FA4-944C-F4D2609B5405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39981AE-9ACF-4FA4-944C-F4D2609B5405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39981AE-9ACF-4FA4-944C-F4D2609B5405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273B7BA4-FBE2-49A8-AEA9-53DF0C462426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273B7BA4-FBE2-49A8-AEA9-53DF0C462426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273B7BA4-FBE2-49A8-AEA9-53DF0C462426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273B7BA4-FBE2-49A8-AEA9-53DF0C462426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F18D1DD-3BF8-49AA-8C84-6D60E5EBAA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F18D1DD-3BF8-49AA-8C84-6D60E5EBAA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F18D1DD-3BF8-49AA-8C84-6D60E5EBAA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F18D1DD-3BF8-49AA-8C84-6D60E5EBAA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3861C31-7380-474F-A702-5348924FB418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3861C31-7380-474F-A702-5348924FB418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3861C31-7380-474F-A702-5348924FB418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3861C31-7380-474F-A702-5348924FB418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F2E111-CCDA-4EFF-B9B8-C9A1EC9B25BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F2E111-CCDA-4EFF-B9B8-C9A1EC9B25BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F2E111-CCDA-4EFF-B9B8-C9A1EC9B25BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F2E111-CCDA-4EFF-B9B8-C9A1EC9B25BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C4D81E-A7F7-4FBD-B314-C49ABAB7F8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C4D81E-A7F7-4FBD-B314-C49ABAB7F8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C4D81E-A7F7-4FBD-B314-C49ABAB7F8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C4D81E-A7F7-4FBD-B314-C49ABAB7F8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA137AAD-416F-4F87-ADEF-812A45ABB268} = {27BE5F54-7B6A-48A8-812F-A42BD440DCD0}
+		{F39981AE-9ACF-4FA4-944C-F4D2609B5405} = {90168C4F-D199-4CBF-8745-EA85D9D51171}
+		{273B7BA4-FBE2-49A8-AEA9-53DF0C462426} = {A94B5F59-E6D5-4F02-BD62-8C9C03285814}
+		{9F18D1DD-3BF8-49AA-8C84-6D60E5EBAA47} = {A94B5F59-E6D5-4F02-BD62-8C9C03285814}
+		{B3861C31-7380-474F-A702-5348924FB418} = {CBD06067-A2A9-4DDA-8922-49B84A60C5DC}
+		{85F2E111-CCDA-4EFF-B9B8-C9A1EC9B25BC} = {CBD06067-A2A9-4DDA-8922-49B84A60C5DC}
+		{E4C4D81E-A7F7-4FBD-B314-C49ABAB7F8D3} = {B3E644BE-E378-42E4-B4DB-62518A770F7B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CCB8AF2-5031-4A9B-9E2C-0E977FDFCE72}
+	EndGlobalSection
+EndGlobal

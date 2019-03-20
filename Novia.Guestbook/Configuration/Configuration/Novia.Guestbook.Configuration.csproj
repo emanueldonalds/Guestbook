@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Application.Abstractions\Novia.Guestbook.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Application\Application\Novia.Guestbook.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\Domain\Novia.Guestbook.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure\Novia.Guestbook.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
