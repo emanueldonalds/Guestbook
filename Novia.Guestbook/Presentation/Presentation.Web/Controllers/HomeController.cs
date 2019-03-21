@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Novia.Guestbook.Presentation.Web.Models;
 
@@ -22,6 +23,7 @@ namespace Novia.Guestbook.Presentation.Web.Controllers
             return View();
         }
 
+        [Authorize(Roles ="administrator")]
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";

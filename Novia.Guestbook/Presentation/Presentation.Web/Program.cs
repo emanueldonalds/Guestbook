@@ -5,10 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Novia.Guestbook.Configuration;
+using Novia.Guestbook.Presentation.Web.Data;
+using Novia.Guestbook.Presentation.Web.Models;
 
 namespace Novia.Guestbook.Presentation.Web
 {
@@ -23,8 +26,14 @@ namespace Novia.Guestbook.Presentation.Web
                 try
                 {
                     StorageConfigurator.SeedDatabase(services);
+
+                    // This seeds the Identity database
+                    var context = services.GetRequiredService<GuestbookIdentityDbContext>();
+                    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+                    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+                    GuestbookIdentityDbContextSeeder.SeedAsync(context, userManager, roleManager).Wait();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error occurred while seeding the database");
