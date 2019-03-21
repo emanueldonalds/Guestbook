@@ -31,7 +31,7 @@ namespace Novia.Guestbook.Presentation.Web.Controllers
         // GET: Guestbook/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(mGuestbookManagement.FindById(id));
         }
 
         // GET: Guestbook/Create

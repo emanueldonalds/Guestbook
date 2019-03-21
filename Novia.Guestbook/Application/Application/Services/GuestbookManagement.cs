@@ -46,13 +46,38 @@ namespace   Novia.Guestbook.Application.Services
 
         public GuestbookDto FindById(int Id)
         {
-            throw new NotImplementedException();
+            IGuestbook theGuestbook = mGuestbookRepository.GetById(Id);
+
+            if (theGuestbook != null)
+            {
+                GuestbookDto theGuestbookDto = new GuestbookDto
+                {
+                    Name = theGuestbook.Name,
+                    Id = theGuestbook.Id
+                };
+
+                return theGuestbookDto;
+            }
+
+            return null;
         }
 
         public bool Modify(GuestbookDto theGuestbook)
         {
-            throw new NotImplementedException();
-        }
+            IGuestbook theBookToModify = mGuestbookRepository.GetById(theGuestbook.Id);
+
+            if (theBookToModify != null)
+            {
+                // Mapping all ui objects to domain objects
+                theBookToModify.Name = theGuestbook.Name;
+                // fill in the guestbookentry list!
+                mGuestbookRepository.Update(theBookToModify);
+
+                return true;
+            }
+
+            return false;
+            }
 
         public bool Remove(GuestbookDto theGuestbook)
         {
